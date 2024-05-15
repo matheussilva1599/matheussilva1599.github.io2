@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <nav class="">
+            <ul>
+                <li class="logotipo"><a href="#">
+                    <img src="img/Remnant_2_Logo.png" alt="logo remanant 2">
+                </a></li>
+
+                <li class="hideMobile"><a href="#">Sobre</a></li>
+                <li class="hideMobile"><a href="classes.html">Classes</a></li>
+                <li class="hideMobile"><a href="#">Arquétipos</a></li>
+                <li class="hideDesktop" onclick= showSidebar() class=""><a href="#">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </a></li>
+            </ul>
+
+
+
+            <ul class="sidebar">
+                <li onclick=hideSidebar() class=""><a href="#">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </a></li>
+                <li class=""><a href="#">Sobre</a></li>
+                <li class=""><a href="classes.html">Classes</a></li>
+                <li class=""><a href="#">Arquétipos</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "flex"
+            }
+
+            function hideSidebar(){
+                const sidebar = document.querySelector(".sidebar");
+                sidebar.style.display = "none"
+            }
+        </script>
+    </section>
+
+    <section>
+        <div class="movie">
+            <video src="video/edit remant2.mp4" autoplay loop muted></video>
+
+            <div class="movie-info">
+
+                <h1>REMNANT II</h1>
+
+                <p>Remnant II é a continuação do grande sucesso de vendas Remnant: From the Ashes. Agora, os sobreviventes da humanidade têm que enfrentar novas e mortais criaturas, além de chefes impossíveis em mundos aterrorizantes.
+
+                    Jogue por conta própria ou em modo cooperativo com dois outros amigos e explore as profundezas do desconhecido para impedir que o mal destrua a própria realidade. Os jogadores terão que contar com suas perícias e com as da sua equipe para superar os desafios mais difíceis e evitar a extinção da humanidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <footer>
+            <div class="rodape">
+                <h2>Direitos autorais reservados</h2>
+                <p>Este é apenas um projeto pessoal com o intuito de recriar e consolidar conhecimentos.</p><br>
+                <p>Com carinho  <span>₢ Matheus Jose</span></p>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
